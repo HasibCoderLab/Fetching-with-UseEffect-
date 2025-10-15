@@ -17,6 +17,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
       <h1></h1>
      {
       allData.map(singleData => <SingleUserData
+      key = {singleData.id}
      singleData = {singleData}
       ></SingleUserData>)
      }
