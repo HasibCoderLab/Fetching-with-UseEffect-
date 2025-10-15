@@ -17,7 +17,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
       <h1></h1>
      {
       allData.map(singleData => <SingleUserData
-      
+     singleData = {singleData}
       ></SingleUserData>)
      }
     </div>

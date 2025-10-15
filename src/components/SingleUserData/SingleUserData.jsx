@@ -1,8 +1,12 @@
 import React from 'react'
 
-const SingleUserData = () => {
+const SingleUserData = (props) => {
+    console.log(props);
+    
   return (
-    <div>SingleUserData</div>
+    <div>
+        <h1 className='m-3 p-4 bg-sky-300 '> Name : {props.singleData.name} </h1>
+    </div>
   )
 }
 
