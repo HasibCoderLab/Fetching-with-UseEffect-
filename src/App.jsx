@@ -14,6 +14,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
     <div>
       <h1> Data Length {allData.length} </h1>
       <h1></h1>
+      {
+        allData.map(data => <p> {data.name}</p>)
+      }
     </div>
   )
 }
