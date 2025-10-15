@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import './App.css'
+import SingleUserData from './components/SingleUserData/SingleUserData';
 
 function App() {
  const [allData , setAllData] = useState([]);
@@ -14,9 +15,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
     <div>
       <h1> Data Length {allData.length} </h1>
       <h1></h1>
-      {
-        allData.map(data => <p> {data.name}</p>)
-      }
+     {
+      allData.map(singleData => <SingleUserData
+      
+      ></SingleUserData>)
+     }
     </div>
   )
 }
