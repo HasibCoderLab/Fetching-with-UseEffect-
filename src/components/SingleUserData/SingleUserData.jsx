@@ -1,11 +1,12 @@
 import React from 'react'
 
-const SingleUserData = (props) => {
-    console.log(props);
+const SingleUserData = ({singleData}) => {
+    console.log(singleData);
     
   return (
     <div>
-        <h1 className='m-3 p-4 bg-sky-300 '> Name : {props.singleData.name} </h1>
+        <h1 className='m-3 p-4 bg-sky-300 '> Name : {singleData.name} </h1>
+        <p className='m-3 p-4 bg-red-600  '> Name : {singleData.phone} </p>
     </div>
   )
 }
